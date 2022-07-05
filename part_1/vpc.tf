@@ -3,8 +3,8 @@ variable "vpc_ipv4_cidr" {
 }
 
 locals {
-  public_subnet_cidr  = cidrsubnet(var.vpc_ipv4_cidr, 4, 0)
-  private_subnet_cidr = cidrsubnet(var.vpc_ipv4_cidr, 4, 2)
+  public_subnet_cidr  = cidrsubnet(var.vpc_ipv4_cidr, 2, 0)
+  private_subnet_cidr = cidrsubnet(var.vpc_ipv4_cidr, 2, 2)
 }
 
 resource "aws_vpc" "vpc" {
