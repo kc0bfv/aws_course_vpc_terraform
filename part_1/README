@@ -1,0 +1,3 @@
+Remember to create your key before trying to `terraform apply`:
+
+ssh-keygen -f course_key
